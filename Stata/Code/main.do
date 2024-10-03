@@ -25,14 +25,14 @@
 
 
 	* Install packages 
-	local user_commands	ietoolkit iefieldkit winsor sumstats estout keeporder grc1leg2 //Add required user-written commands
-
-	foreach command of local user_commands {
-	   capture which `command'
-	   if _rc == 111 {
-		   ssc install `command'
-	   }
-	}
+// 	local user_commands	ietoolkit iefieldkit winsor sumstats estout keeporder grc1leg2 //Add required user-written commands
+//
+// 	foreach command of local user_commands {
+// 	   capture which `command'
+// 	   if _rc == 111 {
+// 		   ssc install `command'
+// 	   }
+// 	}
 
 	* Run do files 
 	* Switch to 0/1 to not-run/run do-files 

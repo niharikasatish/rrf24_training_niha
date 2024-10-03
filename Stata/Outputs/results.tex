@@ -1,0 +1,29 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &Food Consumption (USD)                                           \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\hline
+Treatment           &      -15.11\sym{*}  &      -18.10\sym{*}  &      -18.10         \\
+                    &      (7.69)         &      (7.39)         &     (18.02)         \\
+[1em]
+Area farmed in acres (Winsorized 0.05)&                     &       39.65\sym{***}&       39.65\sym{***}\\
+                    &                     &      (2.82)         &      (2.90)         \\
+[1em]
+Experienced drought/flood&                     &        1.76         &        1.76         \\
+                    &                     &      (7.77)         &      (8.95)         \\
+[1em]
+Experienced crop damage&                     &       47.33\sym{***}&       47.33\sym{***}\\
+                    &                     &      (7.61)         &      (8.28)         \\
+[1em]
+Constant            &      235.41\sym{***}&      138.90\sym{***}&      138.90\sym{***}\\
+                    &      (5.44)         &      (8.95)         &     (16.10)         \\
+\hline
+Observations        &        1758         &        1620         &        1620         \\
+Clustering          &          No         &          No         &         Yes         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

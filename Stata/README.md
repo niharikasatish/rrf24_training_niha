@@ -1,9 +1,8 @@
 
 ---
-title: "README Template for Reproducibility Packages"
-output:
-  word_document: default
-  html_document: default
+"TANZANIAN CONDITIONAL CASH TRANSFER PROJECT" //
+Author: Niharika Satish //
+Date: 3rd October 2024
 ---
 
 - This README template is designed to be included in reproducibility packages to provide directions for replicating the results in the research paper.
@@ -13,13 +12,11 @@ output:
 1. [Overview](#overview)
 2. [Data Availability](#data-availability)
 3. [Instructions for Replicators](#instructions-for-replicators)
-4. [List of Exhibits](#list-of-exhibits)
-5. [Requirements](#requirements)
+4. [Requirements](#requirements)
 
 The rest of the contents of this README file is highly desirable, but not strictly needed for reproducibility. The points above are needed.
 
-6. [Code Description](#code-description)
-7. [Folder Structure](#folder-structure)
+5. [Folder Structure](#folder-structure)
 
 
 ## Overview

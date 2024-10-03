@@ -1,17 +1,100 @@
-# Reproducible Research Fundamentals 2024 - Stata
 
-Author: Niharika Satish
-Date Last Updated: 30/09/2024
+---
+title: "README Template for Reproducibility Packages"
+output:
+  word_document: default
+  html_document: default
+---
 
-Welcome to the **Reproducible Research Fundamentals 2024** training repository. This repository will guide you through all the exercises across the following stages:
+- This README template is designed to be included in reproducibility packages to provide directions for replicating the results in the research paper.
 
-- **0. GitHub Workflow**: Gain essential GitHub skills, including how to create branches, commit changes, and open pull requests.
-- **1. Data Processing**: Learn to clean and tidy your datasets in preparation for analysis.
-- **2. Data Construction**: Build indicators and variables from the processed data.
-- **3. Data Analysis**: Conduct analyses using the constructed data.
-- **4. Reproducibility Package**: Package all work into a reproducible format for sharing and validation.
+## Contents
 
-Feel free to update this README as you progress through the sessions and customize it to reflect the details of your project. For more details on the elements required for a reproducibility package, refer to our [README template](https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md), which you will cover in the **Reproducibility Package** session.
+1. [Overview](#overview)
+2. [Data Availability](#data-availability)
+3. [Instructions for Replicators](#instructions-for-replicators)
+4. [List of Exhibits](#list-of-exhibits)
+5. [Requirements](#requirements)
 
-Remember this is what you will share with your peer at the end of the training for review. 
+The rest of the contents of this README file is highly desirable, but not strictly needed for reproducibility. The points above are needed.
 
+6. [Code Description](#code-description)
+7. [Folder Structure](#folder-structure)
+
+
+## Overview
+
+The aim of this reproducibility package is to present analysis on a Tanzanian Conditional Cash Transfer Programme. All of the data, code and Stata packages needed are in this package. 
+
+## Data Availability
+
+This section will outline where and how the data supporting the findings of the study can be accessed and used. Some of the data used in this study was collected using a survey. All personal identifiers have been removed. However, this survey data cannot be made publicly available due to privacy concerns. Data from Open Street Maps have also been used and this is publicly available to all. 
+
+
+### Data Sources
+
+You can use the following as a template. Make sure to fill out this information for each of the data files used:
+
+- **(1) TZA_amenity:** 
+
+- **Source:** Open Street Maps
+
+- **(2) TZA_CCT_baseline:** 
+
+- **Source:** Survey Data
+
+- **(3) treat_status:** 
+
+- **Source:** Survey Data
+
+## Instructions for Replicators
+
+New users should follow these steps to run the package successfully:
+- Users must first have access to all data files if they are not included in the reproducibility package. They should go to the mentioned links, download the listed files, and place them in the data folder.
+- Update the following files with your directory paths
+
+  - `main_dofile.do`
+- Ensure all required software and dependencies are installed as listed in the [Requirements](#requirements) section.
+
+- Run the `main_dofile.do` file.
+
+## Requirements
+
+### Computational Requirements
+
+Please use STATA Version 18.0 to get the best results.
+
+### Software Requirements
+
+- **Stata version 18**
+
+  - ietoolkit 
+  - iefieldkit 
+  - winsor 
+  - sumstats 
+  - estout 
+  - keeporder 
+  - grc1leg2 
+
+### Memory and Runtime and Storage Requirements
+
+Runtime is 5 mins. 
+
+## Folder Structure
+
+Folder structure is as follows:
+
+```
+Data
+  ├── Raw
+  └── Intermediate
+  └── Final
+Code
+  ├── Main_dofile.do
+  ├── 01_processing-data.do  
+  ├── 02_constructing-data.do
+  └── 03_analyzing-data.do
+Outputs
+  
+
+```
